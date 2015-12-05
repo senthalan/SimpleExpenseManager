@@ -16,7 +16,7 @@ public class MySQLiteHelper  extends SQLiteOpenHelper {
     // Database creation sql statement
     private static final String CREATE_ACCOUNTS = "create table IF NOT EXISTS "
             + TABLE_ACCOUNTS + "(" + ACCOUNT_NO
-            + " TEXT not null, " + BANK_NAME
+            + " TEXT primary key, " + BANK_NAME
             + " TEXT not null, " + ACCOUNT_HOLDER_NAME
             + " TEXT not null,"  + ACCOUNT_BALANCE
             + " DOUBLE );";
